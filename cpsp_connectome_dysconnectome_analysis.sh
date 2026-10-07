@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-# CPSP connectome and dysconnectome analysis
-# Final LNM, BCB, localisation, robustness and spatial analyses.
-# Usage: bash cpsp_connectome_dysconnectome_analysis.sh [primary|localisation|robustness|spatial]
-
 MODE="${1:-primary}"
 WORK="${CPSP_CONNECTOME_WORK:-${TMPDIR:-/tmp}/cpsp_connectome_${USER:-user}}"
 mkdir -p "$WORK"
